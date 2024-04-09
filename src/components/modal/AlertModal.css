@@ -1,0 +1,40 @@
+.alert-modal {
+  padding-bottom: 60px;
+  width: 700px;
+
+  .alert-modal-body {
+    width: 90%;
+    min-height: 120px;
+    max-height: 70vh;
+    color: black;
+    text-align: center;
+    font-size: 34px;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0 25px;
+    white-space: pre-wrap;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .footer__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 60px;
+      color: white;
+      border-radius: 4px;
+      margin: 0 6px;
+    }
+
+    .footer__confirm-btn {
+      background-color: orange;
+    }
+  }
+}
