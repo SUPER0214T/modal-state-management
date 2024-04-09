@@ -1,6 +1,6 @@
 import React from 'react';
-import { ModalProps } from '../../types/modal';
-import ModalReference from './ModalReference/ModalReference';
+import { ModalProps } from '../../../types/modal';
+import ModalReference from '../ModalReference/ModalReference';
 import './AlertModal.css';
 
 interface AlertModalProps extends ModalProps {
