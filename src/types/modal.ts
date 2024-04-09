@@ -1,4 +1,4 @@
-import { MODAL_LIST } from "../constants/ModalList";
+import { MODAL_LIST } from '../constants/ModalList';
 
 export type ModalList = keyof typeof MODAL_LIST;
 

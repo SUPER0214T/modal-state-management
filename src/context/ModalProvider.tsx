@@ -1,5 +1,5 @@
-import React, { createContext, ReactNode, useState } from "react";
-import { ModalList } from "../types/modal";
+import React, { createContext, ReactNode, useState } from 'react';
+import { ModalList } from '../types/modal';
 
 // @todo props 타입 개선 필요
 interface ModalItem {
@@ -8,7 +8,9 @@ interface ModalItem {
   id: string;
 }
 
-export const ModalSetterContext = createContext<React.Dispatch<React.SetStateAction<ModalItem[]>>>(() => {});
+export const ModalSetterContext = createContext<
+  React.Dispatch<React.SetStateAction<ModalItem[]>>
+>(() => {});
 export const ModalStateContext = createContext<ModalItem[]>([]);
 
 export function ModalProvider({ children }: { children: ReactNode }) {
@@ -16,7 +18,9 @@ export function ModalProvider({ children }: { children: ReactNode }) {
 
   return (
     <ModalSetterContext.Provider value={setModalList}>
-      <ModalStateContext.Provider value={modalList}>{children}</ModalStateContext.Provider>
+      <ModalStateContext.Provider value={modalList}>
+        {children}
+      </ModalStateContext.Provider>
     </ModalSetterContext.Provider>
   );
 }
