@@ -14,9 +14,18 @@ function App() {
   };
 
   return (
-    <div>
-      <div onClick={handleOpenModalClick} style={{ border: '1px solid black' }}>
-        모달 열기
+    <div className="app">
+      <div
+        onClick={handleOpenModalClick}
+        className="app__btn app__open-alert-btn"
+      >
+        Alert 모달 열기
+      </div>
+      <div
+        onClick={handleOpenModalClick}
+        className="app__btn app__open-user-decision-btn"
+      >
+        UserDecision 모달 열기
       </div>
       <ModalContainer />
     </div>
