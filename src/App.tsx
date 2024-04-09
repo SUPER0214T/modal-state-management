@@ -13,19 +13,25 @@ function App() {
     });
   };
 
+  const handleOpenUserDecisionModalClick = () => {
+    const modalId = setModalOpen('UserDecisionModal', {
+      body: 'User Decision Modal',
+      onClickConfirm: () => {
+        setModalClose(modalId);
+      },
+      onClickCancel: () => {
+        setModalClose(modalId);
+      },
+    });
+  };
+
   return (
     <div className="app">
-      <div
-        onClick={handleOpenModalClick}
-        className="app__btn app__open-alert-btn"
-      >
-        Alert 모달 열기
+      <div onClick={handleOpenModalClick} className="app__btn">
+        AlertModal
       </div>
-      <div
-        onClick={handleOpenModalClick}
-        className="app__btn app__open-user-decision-btn"
-      >
-        UserDecision 모달 열기
+      <div onClick={handleOpenUserDecisionModalClick} className="app__btn">
+        UserDecisionModal
       </div>
       <ModalContainer />
     </div>

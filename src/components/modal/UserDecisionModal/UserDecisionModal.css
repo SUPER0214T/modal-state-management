@@ -1,0 +1,45 @@
+.user-decision-modal {
+  padding-bottom: 60px;
+  width: 700px;
+
+  .user-decision-modal-body {
+    width: 90%;
+    height: 120px;
+    color: black;
+    text-align: center;
+    font-size: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .footer__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 60px;
+      border-radius: 4px;
+      margin: 0 6px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .footer__cancel-btn {
+      background-color: white;
+      color: red;
+      border: 1px solid red;
+    }
+
+    .footer__confirm-btn {
+      background-color: orange;
+      color: white;
+    }
+  }
+}
