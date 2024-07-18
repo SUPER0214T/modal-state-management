@@ -16,17 +16,10 @@ function ModalReference({
   children,
   className = 'modal',
 }: ModalReferenceProps) {
-  const [defaultClassName, setDefaultClassName] = useState('');
-  const value = { defaultClassName };
-
-  useEffect(() => {
-    setDefaultClassName(className);
-  }, [className]);
-
   return (
     <ReactModal
-      className={defaultClassName}
-      overlayClassName={`${defaultClassName}-overlay`}
+      className={className}
+      overlayClassName={`${className}-overlay`}
       isOpen
     >
       <ModalReferenceContext.Provider value={value}>
